@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { LogoAPComponent } from './componentes/logo-ap/logo-ap.component';
 import { SocialComponent } from './componentes/social/social.component';
-import { BannerComponent } from './componentes/banner/banner.component';
+import { BannerRAGComponent } from './componentes/banner-rag/banner-rag.component';
+import { AboutMeComponent } from './componentes/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +15,9 @@ import { BannerComponent } from './componentes/banner/banner.component';
     HeaderComponent,
     LogoAPComponent,
     SocialComponent,
-    BannerComponent
-  ],
+    BannerRAGComponent,
+    AboutMeComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule

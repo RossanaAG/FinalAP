@@ -4,15 +4,13 @@
 {
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: var(--bg);
 }
 
 ul
 {
     position: relative;
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 ul li
@@ -60,6 +58,6 @@ ul li a
 
 ul li:hover a
 {
-    font-size: 3em;
+    font-size: 4em;
     filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
