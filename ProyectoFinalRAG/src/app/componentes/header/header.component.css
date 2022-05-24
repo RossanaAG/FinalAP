@@ -1,3 +1,6 @@
-<div>
-background-color: black;
-</div>
+div
+{
+    background-color: black;
+    min-height: 120vh;
+}
+

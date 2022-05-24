@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
+
+*
+{
+    font-family: 'Dosis', sans-serif;
+}
+
+.row
+{
+    padding: 20px;
+    margin-left: 8em;
+}
+
+.card
+{
+    margin-top: 45%;
+    
+}
+
+#editorfoto
+{
+    margin-top: 20px;
+}
+
+#redeco
+{
+    width: 230px;
+    margin-left: 10%;
+}
+
+#dataEco
+{
+    margin-top: -5%;
+}
+
+
+#experiencia
+{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    margin-top: 4%;
+    left: 40%;
+    text-transform: uppercase;
+}
+

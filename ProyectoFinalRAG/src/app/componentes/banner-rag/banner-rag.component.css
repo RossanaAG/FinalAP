@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
+
+*
+{
+    font-family: 'Dosis', sans-serif;
+}
+
+
+h1
+{
+    color: #F2F3F4 ;
+    font-size: 5em;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 2em;
+    text-shadow: 0.2em 0.5em 0.1em #c32aa3,
+    -0.3em 0.1em 0.1em greenyellow,
+    0.4em -0.3em 0.1em #1da1f2;
+  }
+
+h2
+{
+  color: white;
+  font-size: 1.5em;
+  margin-left: 5em;
+}
+
+del
+{
+    text-decoration:line-through;
+    color: red;
+    font-size: 15px;
+}
+
+/*-------------------------ANIMACIÓN NOMBRE------------------*/
+
+h2
+{
+    font-weight: 800;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+h2 span
+{
+    transition: 0.5s;
+}
+
+h2:hover span:nth-child(1)
+{
+margin-right: 10 px;
+}
+                
+h2:hover span:nth-child(1):after
+{
+content: '';
+}
+                
+h2:hover span:nth-child(2)
+{
+margin-left: 40 px;
+}
+
+h2:hover span
+{
+color: white;
+text-shadow: 0 0 10px #fff,
+0 0 20px #fff,
+0 0 40px #fff,
+0 0 80px #fff,
+0 0 120px #fff,
+0 0 160px #fff;
+}
+
+.presentacion
+{
+    margin: 14em 0 2em 8em;
+    position: relative;
+}
+
+
+/*-------------------------ANIMACIÓN CIRCULAR------------------*/
+
+.loader
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    z-index: 10;  top: -18em; right: 15em;
+    float: right;
+    
+}
+
+.loader span 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(36deg * var(--i)));
+}
+
+.loader span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    border: 4px solid #00efff;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #00efff,
+    -30px -30px 0 #00efff,
+    -30px -30px 20px #00efff,
+     30px 30px 0 #00efff,
+     30px 30px 20px #00efff,
+     30px -30px 0 #00efff,
+     30px -30px 20px #00efff,
+     -30px 30px 0 #00efff,
+     -30px 30px 20px #00efff;
+     animation: animate 5s linear infinite;
+     animation-delay: calc(-0.25s * var(--i));
+     transform-origin: 20px;
+     transition: 2s;
+}
+
+.loader:hover span::before
+{
+    box-shadow: 0 0 20px #00efff,
+    -200px -200px 0 #00efff,
+    -200px -200px 20px #00efff,
+     200px 200px 0 #00efff,
+     200px 200px 20px #00efff,
+     200px -200px 0 #00efff,
+     200px -200px 20px #00efff,
+     -200px 200px 0 #00efff,
+     -200px 200px 20px #00efff;
+    transform-origin: 250px;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}

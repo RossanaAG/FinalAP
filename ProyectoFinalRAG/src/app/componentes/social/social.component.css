@@ -1,16 +1,21 @@
+
+
 /*----------------------REDES SOCIALES ANIMACIÓN-------------------*/
 
 .social
 {
     justify-content: center;
     align-items: center;
+    float: right;
+    margin-top: 25px;
+    margin-right: 2em;
 }
 
 ul
 {
     position: relative;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 ul li
@@ -36,7 +41,7 @@ ul li::before
 {
     content: '';
     position: absolute;
-    inset: 50px;
+    inset: 55px;
     box-shadow: 0 0 0 3px var(--clr);
     transition: 0.5s;
 }
